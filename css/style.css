@@ -432,10 +432,12 @@ h3 {
 }
 
 #topic-create {
+    display: none;
     margin: 10px 15px;
 }
 
-#topic-create b,i {
+#topic-create b,
+i {
     color: #474747;
 }
 
@@ -455,8 +457,61 @@ h3 {
     border-radius: 3px;
 }
 
+#topic-sucess {
+    display: none;
+}
+
+#topic-sucess a {
+    text-decoration-line: underline;
+    color: #F48F44;
+}
+
 #button-send-topic {
     width: 205.1px;
+}
+
+
+#topic-sucess .button-create-new {
+    position: relative;
+    margin: 60px 0px 10px 0px;
+}
+
+#topic-sucess .button-create-new button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height, or 107% */
+
+    text-align: center;
+
+    color: var(--white);
+
+    height: 32px;
+    width: 235.15px;
+    border: none;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    transition: .3s;
+}
+
+#topic-sucess .button-create-new button:hover {
+    width: 250px;
+}
+
+#topic-sucess .button-create-new::before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #ECECEC;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-50%);
 }
 
 .button-style {
@@ -478,6 +533,48 @@ h3 {
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
     transition: .3s;
+}
+
+#obfuscate {
+    display: none;
+}
+
+.obfuscate h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #707070 !important;
+}
+
+.obfuscate p {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #ED7839;
+}
+
+.obfuscate {
+    /* -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    margin: 0 !important;
+    opacity: 1;
+    background-color: rgb(231, 231, 231, 0.6) !important;
 }
 
 @media screen and (max-width: 1024px) {}
