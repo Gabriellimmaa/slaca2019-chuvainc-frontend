@@ -20,6 +20,16 @@ button:hover {
     transition: .3s;
 }
 
+h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: var(--title-color);
+}
+
 button {
     padding: 0;
     border: none;
@@ -36,6 +46,14 @@ html {
     height: 100%;
     overflow-x: hidden;
     background-color: var(--primary-color-background);
+}
+
+.visible-text {
+    display: block;
+}
+
+.hidden-text {
+    display: none;
 }
 
 .side-menu {
@@ -560,7 +578,7 @@ i {
 
     text-decoration-line: underline;
 
-    color: #ED7839;
+    color: var(--title-color);
 }
 
 .obfuscate {
@@ -576,5 +594,37 @@ i {
     opacity: 1;
     background-color: rgb(231, 231, 231, 0.6) !important;
 }
+.main button {
+    background: var(--title-color);
+    border-radius: 4px;
+    color: var(--white)
+}
+
+.main h5 {
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--title-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.main button:nth-of-type(1) {
+    height: 31px;
+    width: 120px;
+}
+
+.main button:nth-of-type(2) {
+    height: 31px;
+    width: 43px;
+}
+
+.main button:nth-of-type(3) {
+    height: 31px;
+    width: 43px;
+}
+
 
 @media screen and (max-width: 1024px) {}
