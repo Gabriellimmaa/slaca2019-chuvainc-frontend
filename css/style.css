@@ -30,6 +30,10 @@ h5 {
     color: var(--title-color);
 }
 
+h3 {
+    margin-top: 8px!important;
+}
+
 button {
     padding: 0;
     border: none;
@@ -574,6 +578,12 @@ i {
     width: 100%;
 }
 
+.main .buttons button:hover {
+
+    background-color: var(--primary-color-light);
+
+}
+
 .main button:nth-of-type(1) {
     height: 31px;
     width: 70%;
@@ -588,6 +598,89 @@ i {
     height: 31px;
     width: 15%;
 }
+
+.video {
+    position: relative;
+}
+
+
+.video .sobrepor {
+    margin: 0 0 5px 0 !important;
+    color: var(--white);
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    background-color: rgb(238,122,58, 0.6);
+}
+
+.video .sobrepor label:first-child {
+    margin: 0 !important;
+    padding: 25px 0px 0px 25px;
+    color: var(--white);
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    z-index: 1;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 25px;
+
+    letter-spacing: 0.05em;
+}
+
+.video .sobrepor .card {
+    border: none !important;
+    margin: 0px 0px 100px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.video .sobrepor .card p:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 25px;
+
+    letter-spacing: 0.05em;
+}
+
+.video .sobrepor .card p:last-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    
+    color: #FFFFFF;
+}
+
+.video .sobrepor .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 4px;
+    border: solid 2px var(--primary-color)
+}
+
 
 @media screen and (max-width: 1280px) {
     .header .text h5 {
