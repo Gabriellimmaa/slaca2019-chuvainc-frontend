@@ -26,9 +26,15 @@ function sendTopic() {
     document.getElementById("topic-create").style.display = "none";
 }
 
-function showText() {
-
+function showMenu() {
+    var x = document.getElementById("showMenu");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
 }
+
 
 function show() {
     document.getElementById('scritta').className = 'visible-text';

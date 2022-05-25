@@ -1,0 +1,118 @@
+
+.box {
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+.box .title {
+    background: var(--primary-color-light-2);
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.box .title h3 {
+    color: #4E4E4E;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.box p,
+h3 {
+    margin-left: 20px !important;
+}
+
+.box .text {
+    padding: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.box .text a {
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+.box .text h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: var(--title-color);
+
+}
+
+.box .card {
+    margin: 10px 15px;
+    padding: 17px;
+    background: var(--white);
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.box .card-header,
+.card-body,
+.card-footer {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.box .card-header span {
+    margin: 5px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.box .card-body {
+    padding: 0rem 1rem !important;
+}
+
+.box .card-footer {
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.box .card-footer span {
+    color: #757575;
+    margin-right: 20px;
+}
+
+.box .card-footer svg:hover {
+    cursor: pointer;
+}
+
+.box .card .fa-ellipsis-vertical {
+    font-size: 25px;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.box .card .fa-ellipsis-vertical:hover {
+    font-size: 25px;
+    margin-right: 20px;
+    color: var(--primary-color-light);
+}
+
+.box .card .fa-heart {
+    transition: .3s;
+    color: white;
+    background-color: var(--title-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.box .card .fa-heart:hover {
+    color: var(--title-color);
+    background-color: var(--primary-color-light);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
