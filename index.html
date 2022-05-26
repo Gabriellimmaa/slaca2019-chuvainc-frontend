@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Lima (github.com/Gabriellimmaa/)" />
     <meta name="keywords" content="SLACA, slaca, SLACA 2019, slaca 2019" />
-    <link rel="stylesheet" href="./fontawesome/all.min.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/box.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/box.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>SLACA 2019</title>
 </head>
@@ -25,13 +26,13 @@
         <div class="d-flex justify-content-around ">
             <i onclick="showMenu()" class="align-self-center fa-solid fa-bars"></i>
             <h2 class="align-self-center">SLACA 2019</h2>
-            <img class="align-self-center px-3" src="./img/user.png">
+            <img class="align-self-center px-3" src="./img/user.webp">
         </div>
         <div id="showMenu" class="side-menu-show">
             <div class="sidebar-content h-100">
                 <ul>
                     <li class="h-25 justify-content-center"><img style="height: 300px;width: auto"
-                            src="./img/dewey 4.png" /></li>
+                            src="./img/dewey_4.webp" /></li>
                     <li><a>Apresentação</a></li>
                     <li><a>Comitês</a></li>
                     <li><a>Autores</a></li>
@@ -52,7 +53,7 @@
                 <h3>SLACA 2019</h3>
             </div>
             <div class="sidebar-content">
-                <img src="./img/dewey 4.png" />
+                <img src="./img/dewey_4.webp" />
                 <ul>
                     <li><a>Apresentação</a></li>
                     <li><a>Comitês</a></li>
@@ -86,7 +87,7 @@
                         <p class="m-0">alguem12@galoascience.com</p>
                     </div>
                     <span class="notify-badge">2</span>
-                    <img class="px-3" src="./img/user.png">
+                    <img class="px-3" src="./img/user.webp">
                 </div>
             </div>
         </header>
@@ -98,12 +99,13 @@
                         15 anos, do município de Campinas/SP </h5>
                     <div class="video">
                         <div class="sobrepor">
-                            <label>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
+                            <label>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
+                                15
                                 anos, do município de Campinas/SP </label>
                             <div class="card">
                                 <div class="row">
                                     <div class="col-2">
-                                        <img src="./img/autor.png">
+                                        <img src="./img/autor.webp">
                                     </div>
                                     <div class="col">
                                         <p>Beatriz Christiane Melo</p>
@@ -129,7 +131,7 @@
                     </div>
 
                     <h5>COMO CITAR ESSE TRABALHO?</h5>
-                    <div class="box">
+                    <div id="detalhes" class="box">
                         <div class="title">
                             <h3>Detalhes</h3>
                         </div>
@@ -220,13 +222,13 @@
                         <h5 class="text-center">Compartilhe suas ideias ou dúvidas com os autores!</h5>
                         <div class="row my-4 justify-content-center">
                             <div class="mx-4 col-auto">
-                                <img src="./img/icone1.png">
+                                <img src="./img/icone1.webp">
                             </div>
                             <div class="mx-4 col-auto">
-                                <img src="./img/icone2.png">
+                                <img src="./img/icone2.webp">
                             </div>
                             <div class="mx-4 col-auto">
-                                <img src="./img/icone3.png">
+                                <img src="./img/icone3.webp">
                             </div>
                         </div>
                         <div class="text-center">
@@ -254,8 +256,8 @@
                             <textarea class="form-control" id="formControlConteudo" rows="4"></textarea>
                             <div class="config d-flex justify-content-between w-100">
                                 <div class="px-3">
-                                    <button class="h-100 px-2"><b>B</b></button>
-                                    <button class="h-100 px-2"><i>I</i></button>
+                                    <button onclick="boldConvert(this)" class="h-100 px-2"><b>B</b></button>
+                                    <button onclick="italicConvert(this)" class="h-100 px-2"><i>I</i></button>
                                 </div>
                                 <div class="ml-auto p-0">
                                     <button id="button-send-topic" onclick="sendTopic()"
@@ -285,17 +287,19 @@
                         <div class="card p-0">
                             <div class="card obfuscate">
                                 <div class="text-center">
-                                    <img src="./img/certo.png">
+                                    <img src="./img/certo.webp">
                                     <h5>Aguardando feedback dos autores</h5>
-                                    <p>Editar tópico</p>
+                                    <a>
+                                        <p>Editar tópico</p>
+                                    </a>
                                 </div>
                             </div>
-                            <div style="filter: blur(5px);padding: 17px !important;"
+                            <div style="filter: blur(5px);padding: 17px !important;user-select: none;"
                                 class="card-header row d-flex text-left">
                                 <h5 class="m-0">Assunto da pergunta aparece aqui</h5>
                                 <span>Carlos Henrique Santos</span>
                             </div>
-                            <div style="filter: blur(5px);padding: 17px !important;"
+                            <div style="filter: blur(5px);padding: 17px !important;user-select: none;"
                                 class="card-body row d-flex text-left">
                                 <span>Comecinho da pergunta aparece aqui resente relato inscreve-se no
                                     campo da
@@ -306,44 +310,103 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header row d-flex text-left">
-                            <h5 class="m-0">Assunto da pergunta aparece aqui</h5>
-                            <span>Carlos Henrique Santos</span>
-                        </div>
-                        <div class="card-body row d-flex text-left">
-                            <span>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
-                                análise da dimensão e impacto de processo formativo situado impacto de
-                                processo formativo processo...</span>
-                        </div>
-                        <div class="card-footer d-flex justify-content-start">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                            <i class="fa-solid fa-heart"></i>
-                            <span>1 like</span>
-                            <span>1 resposta</span>
+                        <div class="card-content">
+
+                            <div class="card-header row d-flex text-left">
+                                <h5 class="m-0">Assunto da pergunta aparece aqui</h5>
+                                <span>Carlos Henrique Santos</span>
+                            </div>
+                            <div class="card-body row d-flex text-left">
+                                <span>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+                                    análise da dimensão e impacto de processo formativo situado impacto de
+                                    processo formativo processo...</span>
+                            </div>
+                            <div class="card-footer d-flex justify-content-start">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <button>1 like</button>
+                                <button onclick="showAnswers()">1 resposta</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header row d-flex text-left">
-                            <h5 class="m-0">Assunto da pergunta aparece aqui</h5>
-                            <span>Carlos Henrique Santos</span>
+                        <div class="card-content">
+                            <div class="card-header row d-flex text-left">
+                                <h5 class="m-0">Assunto da pergunta aparece aqui</h5>
+                                <span>Carlos Henrique Santos</span>
+                            </div>
+                            <div class="card-body row d-flex text-left">
+                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+                                    análise da dimensão e impacto de processo formativo situado impacto de
+                                    processo formativo processo...</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-start">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <button>1 like</button>
+                                <button onclick="showAnswers()">1 resposta</button>
+                            </div>
                         </div>
-                        <div class="card-body row d-flex text-left">
-                            <span>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
-                                análise da dimensão e impacto de processo formativo situado impacto de
-                                processo formativo processo...</span>
+                        <div class="card-answers card-answers-autor">
+                            <div class="d-flex justify-content-between">
+                                <p>Adriano da Silva</p>
+                                <div id="answers-autor" class="autor">
+                                    <span>Autor</span>
+                                    <img src="./img/certo-autor.webp">
+                                </div>
+                            </div>
+                            <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de
+                                processo formativo situado impacto de processo formativo processo resente relato
+                                inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
+                                impacto de processo formativo processo.</p>
                         </div>
-                        <div class="card-footer d-flex justify-content-start">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                            <i class="fa-solid fa-heart"></i>
-                            <span>1 like</span>
-                            <span>1 resposta</span>
+                        <div class="card-answers card-answers-none">
+                            <div class="d-flex justify-content-between">
+                                <p>Carlos Henrique Santos</p>
+                                <div>
+                                </div>
+                            </div>
+                            <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de
+                                processo formativo situado impacto de processo formativo.<br><br>
+
+                                Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                        </div>
+                        <div class="card-answers card-answers-autor">
+                            <div class="d-flex justify-content-between">
+                                <p>Carmila Ferreira Andrade</p>
+                                <div id="answers-autor" class="autor">
+                                    <span>Coautor</span>
+                                    <img src="./img/certo-autor.webp">
+                                </div>
+                            </div>
+                            <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e
+                                impacto de processo formativo situado impacto de processo formativo processo resente
+                                relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                situado impacto de processo formativo processo.<br><br>
+
+                                Situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                                análise da dimensão e impacto de processo formativo situado impacto de processo
+                                formativo processo.</p>
+                        </div>
+                        <div class="card-answers card-answers-autor">
+                            <div class="d-flex justify-content-between">
+                                <p>Ana Carolina</p>
+                                <div id="answers-autor" class="autor">
+                                    <span>Coautor</span>
+                                    <img src="./img/certo-autor.webp">
+                                </div>
+                            </div>
+                            <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de
+                                processo formativo situado impacto de processo formativo processo resente relato
+                                inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
+                                impacto de processo formativo processo.</p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <footer>
-            <img src="./img/imagem - footer.png">
+            <img src="./img/imagem_-_footer.webp">
         </footer>
         </div>
 

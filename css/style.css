@@ -6,12 +6,18 @@
     --text-color: #5C5C5C;
     --text-color-2: #725C5C;
     --white: #FFFFFF;
+    --black: #000000;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.btn-default:focus, .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
 }
 
 a,
@@ -366,6 +372,10 @@ html {
 
 }
 
+#topic-home {
+    margin-top: 15px;
+}
+
 #topic-home .button-create {
     position: relative;
     margin: 30px 0px;
@@ -409,6 +419,9 @@ html {
 }
 
 #topic-home .button-create span:nth-of-type(2) {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
     margin-top: -10px;
     margin-left: 20px;
 }
@@ -426,17 +439,17 @@ html {
     display: none;
     margin: 10px 15px;
 }
-
-#topic-create b,
-i {
-    color: #474747;
-}
-
 #topic-create .config {
     height: 31px;
     background: #EAF1F2;
     border: 1px solid #CCCCCC;
     border-radius: 0px 0px 4px 4px;
+}
+
+#topic-create .config button {
+    border-radius: 5px;
+    width: 25px;
+    color: #474747;
 }
 
 #topic-create textarea {
@@ -446,6 +459,7 @@ i {
 #topic-create input {
     height: 39px;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 #topic-sucess {
@@ -458,7 +472,8 @@ i {
 }
 
 #button-send-topic {
-    width: 205.1px;
+    color: var(--white) !important;
+    width: 205.1px !important;
 }
 
 
@@ -545,6 +560,7 @@ i {
 }
 
 .obfuscate {
+    z-index: 1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -585,6 +601,11 @@ i {
 }
 
 .main button:nth-of-type(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
     height: 31px;
     width: 70%;
 }
@@ -681,6 +702,17 @@ i {
     border: solid 2px var(--primary-color)
 }
 
+.review-text {
+    margin: 10px 20px;
+}
+
+#detalhes .text {
+    padding: 10px 20px;
+}
+
+.card-answers {
+    display: none;
+}
 
 @media screen and (max-width: 1280px) {
     .header .text h5 {

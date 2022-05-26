@@ -1,16 +1,41 @@
-$(document).ready(function () {
-
-    $('#scrolTop, #scrolTop2, #scrolTop3, #scrolTop4').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 'slow');
+function showAnswers(){
+    const elements = document.querySelectorAll('.card-answers');
+    Array.from(elements).forEach((element, index) => {
+        if(element.style.display === "block"){
+            element.style.display="none";
+        }else{
+            element.style.display="block";
+        }
     });
+    
 
-    if ($('#error_name:visible')) {
-        setTimeout(function () {
-            $('#error_name').fadeOut();;
-        }, 3000)
+}
+
+function boldConvert(clicked) {
+    var element = document.getElementById("formControlConteudo");
+    if (element.style.fontWeight === "") {
+        clicked.style.backgroundColor="#EE7A3A";
+        clicked.style.color="white";
+        element.style.fontWeight="bold";
+    }else {
+        clicked.style.backgroundColor=null;
+        clicked.style.color=null;
+        element.style.fontWeight=null;
     }
+}
 
-});
+function italicConvert(clicked) {
+    var element = document.getElementById("formControlConteudo");
+    if (element.style.fontStyle === "") {
+        clicked.style.backgroundColor="#EE7A3A";
+        clicked.style.color="white";
+        element.style.fontStyle="italic";
+    }else {
+        clicked.style.backgroundColor=null;
+        clicked.style.color=null;
+        element.style.fontStyle=null;
+    }
+}
 
 function createTopic() {
     document.getElementById("topic-create").style.display = "block";
