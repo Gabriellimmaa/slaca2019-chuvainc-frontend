@@ -2,7 +2,7 @@
 
 ![Resultado final do projeto](img/preview.png)
 
-<h4 align="center"><a href="https://gabriellimmaa.github.io/portfolio/">Clique para visitar o site</a></h4>
+<h4 align="center"><a href="https://gabriellimmaa.github.io/slaca2019-chuvainc-frontend/">Clique para visitar o site</a></h4>
 <h4 align="center"><a href="https://www.figma.com/file/0D27YdXU8ibf0AhsBC2OEm/Chuva---Exerc%C3%ADcio-Frontend">Clique para visitar o figma</a></h4>
 
 ---
